@@ -25,12 +25,12 @@ function App() {
         setState([])
     }
 
+    
     const showValue = () => {
          fetch('https://jsonplaceholder.typicode.com/posts')
                 .then(response => response.json())
                 .then(json => setState(json)
         )
-
     }
 
     return (
@@ -42,7 +42,6 @@ function App() {
                     return (
                         <li key={el.id}>
                             <div>{el.id}  </div>
-                            <span>{el.body}  </span>
                             <span>{el.title}  </span>
                         </li>
                     )
