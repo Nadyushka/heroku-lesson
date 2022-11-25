@@ -42,7 +42,6 @@ function App() {
                     return (
                         <li key={el.id}>
                             <div>{el.id}  </div>
-                            <span>{el.body}  </span>
                             <span>{el.title}  </span>
                         </li>
                     )
