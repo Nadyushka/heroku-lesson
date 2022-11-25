@@ -42,7 +42,7 @@ function App() {
                     return (
                         <li key={el.id}>
                             <div>{el.id}  </div>
-                            <span>{el.userId}  </span>
+                            <span>{el.body}  </span>
                             <span>{el.title}  </span>
                         </li>
                     )
