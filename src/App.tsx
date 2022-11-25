@@ -25,12 +25,12 @@ function App() {
         setState([])
     }
 
+    
     const showValue = () => {
          fetch('https://jsonplaceholder.typicode.com/posts')
                 .then(response => response.json())
                 .then(json => setState(json)
         )
-
     }
 
     return (
